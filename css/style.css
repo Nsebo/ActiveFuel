@@ -28,7 +28,7 @@ body {
 }
 
 section {
-  min-height: 100vh;
+  min-height: 85vh;
   padding: 10rem 8% 2rem;
 }
 
@@ -371,7 +371,7 @@ span {
 
 .review-item {
   min-height: 450px;
-  min-width: 450px;
+  min-width: 350px;
   background: var(--snd-color);
   border: 3px solid rgba(238, 238, 238, 0.3);
   border-radius: 2rem;
@@ -384,5 +384,54 @@ span {
   align-items: center;
   gap: 1.5rem;
   color: #fff;
+  transition: 0.5s ease-in-out;
+}
+
+.review-item:hover {
+  border: 3px solid var(--main-color);
+  transform: translateY(-5px) scale(1.03);
+}
+
+.review-item h2 {
+  font-size: 2.8rem;
+}
+
+.review-item p {
+  font-size: 1.5rem;
+  line-height: 1.3;
+}
+
+#Star {
+  color: gold;
+  font-size: 2rem;
+}
+
+/* End of Review Section */
+
+/*Footer Section */
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  padding: 40px 0;
+  background: var(--snd-color);
+}
+
+.footer .social {
+  text-align: center;
+  padding-bottom: 20px;
+  color: var(--main-color);
+}
+
+.footer .social a {
+  font-size: 25px;
+  color: var(--main-color);
+  width: 42px;
+  height: 42px;
+  line-height: 42px;
+  display: inline-block;
+  text-align: center;
+  border-radius: 50%;
+  margin: 0 10px;
   transition: 0.5s ease-in-out;
 }
